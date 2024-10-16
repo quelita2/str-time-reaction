@@ -1,4 +1,4 @@
-# Medidor de Tempo de Reação
+# ⏱️ Medidor de Tempo de Reação
 
 Este é um mini-game em Python, utilizando a biblioteca Pygame, que mede o tempo de reação de um jogador ao pressionar a tecla correta, associada à cor de um círculo que aparece aleatoriamente na tela. O jogo é composto por 10 tentativas, e no final exibe a pontuação do jogador (acertos) e o tempo médio de reação.
 
