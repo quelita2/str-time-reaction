@@ -29,8 +29,8 @@ pygame.display.set_caption("Medidor de Tempo de Reação")
 # Fonte
 fonte = pygame.font.Font(None, 36)
 
-# Função para mostrar as instruções
 def mostrar_instrucoes():
+    '''Função para mostrar as instruções'''
     tela.fill(PRETO)
     instrucoes = [
         "",
@@ -52,13 +52,13 @@ def mostrar_instrucoes():
         tela.blit(linha, ((tamanho_tela[0] - largura_texto) // 2, 50 + i * 40))
     pygame.display.flip()
 
-# Função para exibir um círculo em uma posição e cor aleatória
 def mostrar_circulo(cor, posicao):
+    '''Função para exibir um círculo em uma posição e cor aleatória'''
     pygame.draw.circle(tela, cor, posicao, 50)
     pygame.display.flip()
     
-# Função principal do jogo
 def jogo():
+    '''Função principal do jogo'''
     tempos_reacao = []
     acertos = 0
     tentativas = 10
@@ -124,8 +124,8 @@ def jogo():
     # Espera alguns segundos antes de fechar
     pygame.time.wait(5000)
 
-# Função principal para rodar o jogo
 def main():
+    '''Função principal para rodar o jogo'''
     mostrar_instrucoes()
     
     # Espera até que uma tecla seja pressionada para iniciar
@@ -138,8 +138,8 @@ def main():
     # Iniciar o jogo
     jogo()
 
-# Rodando o programa
 if __name__ == "__main__":
+    '''Rodando o programa'''
     main()
 
 # Encerrando o Pygame
